@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@font-face{
+    font-family: 'titulo';
+    src: url('../fonts/Bungee-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'artigo';
+    src: url('../fonts/OpenSans-Regular.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face{
+        font-family: 'paragrafo';
+        src: url('../fonts/Exo2-Italic-VariableFont_wght.ttf');
+        font-weight: normal;
+        font-size: normal;
+}
+    /*Cabeçalho*/
+header h1{
+    text-align: center;
+    font-family: 'titulo' , sans-serif;
+    color: gold;
+    background-color: #4952E6;
+    padding: 8px;
+    margin: -5px -20px 0px -20px;
+    height: 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 -20px 0 -20px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-family: 'paragrafo';
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #4CAF50;
+}
+
+    /* Formatação do corpo*/
+
+div.interface {
+    width:900px;
+    background-color: honeydew;
+    margin: -23px auto 0px auto;
+    box-shadow:0px 0px 10px rgba(0,0,0,.5);
+    padding: 20px;
+}    
+body {
+    background-color: #7B43C4;
+}
+body p{
+    font-family: 'paragrafo';
+    font-size: 12pt;
+    text-indent: 2em;
+}
+body h2, h3{
+    font-family: 'artigo', sans-serif;
+    color: #7a7;
+}
+    /*Rodapé*/
+footer p {
+    color: black;
+    text-align: center;
+}    
