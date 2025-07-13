@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/*Artigo*/
+
+.artigo h2 {
+    text-align: left;
+}
+
+.artigo p {
+    text-align: justify;
+    color: black;
+}
+figcaption{
+    text-align: justify;
+    font-family: 'paragrafo';
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.artigo h3{
+    text-align: center;
+    color: #7a7;
+}
