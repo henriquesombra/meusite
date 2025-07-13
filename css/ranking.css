@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/*Artigo*/
+article h2{
+    text-align: left;
+}
+/*Tabela*/
+table{
+    border: 3px solid black;
+}
+table tr td{
+    border: 1px solid black;
+    width: 25%;
+    font-family: 'paragrafo';
+}
+table tr.Info{
+    background-color: #cee;
+}
+table tr{
+    background-color: #56D927;
+}
