@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>WikiCoin - Cotação de moedas</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="./js/cotacao.js"></script>
+        <script src="./js/conversao.js"></script>
+        <link rel="stylesheet" href="css/cotacao.css">
+    </head>
+<body>
+    <div class="interface">
+        <header>
+            <h1>WikiCoin</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="moedasReserva.html">Moedas de reserva</a></li>
+                    <li><a href="ranking.html">Ranking</a></li>
+                    <li><a href="cotacao.html">Cotação de moedas</a></li>
+                    <li><a href="form.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="divi">
+            <h2>Cotação atualizada</h2>
+            <div>
+                <select id="moeda">
+                    <optgroup label="Moedas estatais">
+                        <option value="EUR">Euro</option>
+                        <option value="USD">Dólar</option>
+                        <option value="GBP">Libra Esterlina</option>
+                        <option value="CNY">Yuan Chinês</option>
+                        <option value="JPY">Iene Japônes</option>
+                    </optgroup>
+                    <optgroup label="Criptomoedas">
+                        <option value="BTC">Bitcoin</option>
+                    </optgroup>
+                </select>   
+                <input type="button" value="Cotação" onclick="cotar()">
+            </div>
+
+            <table width="30%">
+                <tr>
+                    <td><strong>Nome</strong></td>
+                    <td id="nome">null</td>
+                </tr>
+                <tr>
+                    <td><strong>Compra</strong></td>
+                    <td id="compra">null</td>
+                </tr>
+                <tr>
+                    <td><strong>Venda</strong></td>
+                    <td id="venda">null</td>
+                </tr>
+                <tr>
+                    <td><strong>Data/Hora</strong></td>
+                    <td id="data">null</td>
+                </tr>
+            </table>
+
+            <h2>Conversão para Real</h2>
+            <div>
+                <select id="conversao">
+                    <optgroup label="Moedas estatais">
+                        <option value="EUR">Euro</option>
+                        <option value="USD">Dólar</option>
+                        <option value="GBP">Libra Esterlina</option>
+                        <option value="CNY">Yuan Chinês</option>
+                        <option value="JPY">Iene Japônes</option>
+                    </optgroup>
+                    <optgroup label="Criptomoedas">
+                        <option value="BTC">Bitcoin</option>
+                    </optgroup>
+                </select>
+                <span>&#8644;</span>
+                <select id="conversor">
+                    <optgroup label="Moedas estatais">
+                        <option value="RBL">Real</option>
+                    </optgroup>
+                </select>
+                <br>
+                <input type="number" name="tVal" id="tVal" placeholder="Ex.: 450.50" >
+                <input type="button" value="Converter" onclick="converte()">
+            </div>
+            <table>
+                <tr>
+                    <td><strong>Cotação</strong></td>
+                    <td id="cotacao">null</td>
+                </tr>
+                <tr>
+                    <td><strong>Conversão</strong></td>
+                    <td id="convertido">null</td>
+                </tr>
+            </table>
+        </div>
+
+        <footer id="cota">
+            <p>&reg; WikiCoin - by Artur Henrique</p>
+        </footer>
+    </div>
+</body>
+</html>
